@@ -2,9 +2,13 @@
   "name": "@hexlet/code",
   "version": "1.0.0",
   "description": "my_fist_projekt",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "brain-games": "bin/brain-games.js"
   },
   "repository": {
     "type": "git",
@@ -17,3 +21,4 @@
   },
   "homepage": "https://github.com/orishko/backend-project-lvl1#readme"
 }
+
