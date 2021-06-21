@@ -12,7 +12,7 @@ $ make install
 
 ## Run games
 
-1. Parity check
+### 1. Parity check
 
 ```sh
 $ brain-even
