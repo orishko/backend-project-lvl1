@@ -12,7 +12,7 @@ $ make install
 
 ## Games
 
-### 1. Is this number even
+### 1. Even number
 
 ```sh
 $ brain-even
@@ -38,7 +38,7 @@ $ brain-gcd
 $ brain-progression
 ```
 
-### 5. Is this a prime number
+### 5. Prime number
 
 ```sh
 $ brain-prime
