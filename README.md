@@ -8,4 +8,8 @@
 $ make install
 ```
 
+## Run games
+
+$ brain-even
+
 [![asciicast](https://asciinema.org/a/R4L2VelWgPLbpwreJKoO60H30.svg)](https://asciinema.org/a/R4L2VelWgPLbpwreJKoO60H30)
