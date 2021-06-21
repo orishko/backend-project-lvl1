@@ -1,8 +1,32 @@
 import readlineSync from 'readline-sync';
 
 const questionNumber = 3;
+
 const randomInt = (max = 100, min = 0) =>
   Math.floor(Math.random() * (max - min + 1)) + min;
+
+const isPrime = (num) => {
+  if (num <= 1) return false;
+  if (num === 2) return true;
+
+  for (let i = 2; i < num; i += 1) {
+    if (num % i === 0) {
+      return false;
+    }
+  }
+
+  return true;
+};
+
+const isEven = (number) => number % 2 === 0;
+
+const gcd = (a, b) => {
+  if (b) {
+    return gcd(b, a % b);
+  }
+
+  return Math.abs(a);
+};
 
 const generalLogicGame = (userName, game) => {
   for (let i = 1; i <= questionNumber; i += 1) {
@@ -24,4 +48,4 @@ const generalLogicGame = (userName, game) => {
   return true;
 };
 
-export { generalLogicGame, randomInt, questionNumber };
+export { generalLogicGame, randomInt, isPrime, isEven, gcd };
