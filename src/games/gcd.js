@@ -1,4 +1,4 @@
-import { randomInt, gcd } from './index.js';
+import { randomInt, gcd } from '../index.js';
 
 export default () => {
   const firstNumber = randomInt();

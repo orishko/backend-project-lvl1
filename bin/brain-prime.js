@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 import greeting from '../src/cli.js';
-import prime from '../src/prime.js';
+import prime from '../src/games/prime.js';
 import { generalLogicGame } from '../src/index.js';
 
 const userName = greeting();

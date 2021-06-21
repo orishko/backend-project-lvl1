@@ -1,4 +1,4 @@
-import { randomInt } from './index.js';
+import { randomInt } from '../index.js';
 
 export default () => {
   const progressionStep = randomInt(10);

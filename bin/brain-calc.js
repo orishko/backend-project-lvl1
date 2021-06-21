@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 import greeting from '../src/cli.js';
-import calc from '../src/calc.js';
+import calc from '../src/games/calc.js';
 import { generalLogicGame } from '../src/index.js';
 
 const userName = greeting();

@@ -1,4 +1,4 @@
-import { randomInt, isPrime } from './index.js';
+import { randomInt, isPrime } from '../index.js';
 
 export default () => {
   const randomNumber = randomInt();

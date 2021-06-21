@@ -1,4 +1,4 @@
-import { randomInt, isEven } from './index.js';
+import { randomInt, isEven } from '../index.js';
 
 export default () => {
   const randomNumber = randomInt();
