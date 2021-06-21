@@ -1,7 +1,8 @@
 #!/usr/bin/env node
-import askName from '../src/cli.js';
-import getRandomInt from '../src/even.js';
+import greeting from '../src/cli.js';
+import even from '../src/even.js';
+import { generalLogicGame } from '../src/index.js';
 
-console.log('Welcome to the Brain Games!');
-const userName = askName();
-getRandomInt(userName);
+const userName = greeting();
+console.log('Answer "yes" if the number is even, otherwise answer "no".');
+generalLogicGame(userName, even);
