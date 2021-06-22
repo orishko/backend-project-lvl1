@@ -42,8 +42,12 @@ $ brain-gcd
 $ brain-progression
 ```
 
+[![asciicast](https://asciinema.org/a/ULFLl3kuVps1sOvHZtwv2daKn.svg)](https://asciinema.org/a/ULFLl3kuVps1sOvHZtwv2daKn)
+
 ### 5. Prime number
 
 ```sh
 $ brain-prime
 ```
+
+[![asciicast](https://asciinema.org/a/5ramI7c1DAhTZ8CgmGOvNpA9W.svg)](https://asciinema.org/a/5ramI7c1DAhTZ8CgmGOvNpA9W)
