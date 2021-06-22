@@ -47,5 +47,5 @@ const generalLogicGame = (userName, game) => {
   console.log(`Congratulations, ${userName}!`);
   return true;
 };
-const t = 'f';
+
 export { generalLogicGame, randomInt, isPrime, isEven, gcd };
