@@ -1,7 +1,7 @@
 import { randomInt } from '../index.js';
 
 export default () => {
-  const progressionStep = randomInt(10);
+  const progressionStep = randomInt(10, 1);
   const progressionLength = randomInt(10, 5);
   const hiddenElement = randomInt(progressionLength);
   const result = [];

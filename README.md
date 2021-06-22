@@ -34,6 +34,8 @@ $ brain-calc
 $ brain-gcd
 ```
 
+[![asciicast](https://asciinema.org/a/z3XDYQ962HUMb0DJk4nmd9vK0.svg)](https://asciinema.org/a/z3XDYQ962HUMb0DJk4nmd9vK0)
+
 ### 4. Arithmetic progression
 
 ```sh
