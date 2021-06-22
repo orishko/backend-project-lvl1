@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "my_fist_project",
   "type": "module",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -26,10 +26,11 @@
   },
   "homepage": "https://github.com/orishko/backend-project-lvl1#readme",
   "dependencies": {
-    "eslint-config-airbnb": "^18.2.1",
-    "eslint-config-airbnb-base": "^14.2.1",
-    "eslint-plugin-import": "^2.22.1",
     "readline-sync": "^1.4.10"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "eslint": "^7.29.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1"
+  }
 }
