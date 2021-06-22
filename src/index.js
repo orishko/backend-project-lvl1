@@ -2,8 +2,7 @@ import readlineSync from 'readline-sync';
 
 const questionNumber = 3;
 
-const randomInt = (max = 100, min = 0) =>
-  Math.floor(Math.random() * (max - min + 1)) + min;
+const randomInt = (max = 100, min = 0) => Math.floor(Math.random() * (max - min + 1)) + min;
 
 const isPrime = (num) => {
   if (num <= 1) return false;
@@ -48,4 +47,6 @@ const generalLogicGame = (userName, game) => {
   return true;
 };
 
-export { generalLogicGame, randomInt, isPrime, isEven, gcd };
+export {
+  generalLogicGame, randomInt, isPrime, isEven, gcd,
+};
