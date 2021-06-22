@@ -11,7 +11,7 @@ export default () => {
   for (let i = 0; i <= progressionLength; i += 1) {
     if (hiddenElement === i) {
       expectedAnswer = member;
-      result.push('...');
+      result.push('..');
     } else {
       result.push(member);
     }
