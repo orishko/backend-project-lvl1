@@ -1,8 +1,4 @@
 ---
-plugins:
-  # https://github.com/jest-community/eslint-plugin-jest
-  - import
-
 # https://eslint.org/docs/user-guide/configuring#specifying-environments
 env:
   node: true
@@ -18,4 +14,4 @@ parserOptions:
 rules:
   no-console: 0
   import/extensions: 0 # FIXME: remove when rule will be adjusted for new nodejs version
-  no-underscore-dangle: [2, { 'allow': ['__filename', '__dirname'] }]
+  no-await-in-loop: 0
