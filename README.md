@@ -26,6 +26,8 @@ $ brain-even
 $ brain-calc
 ```
 
+[![asciicast](https://asciinema.org/a/HDY4JndlqfcqiJ5AvnZZBe6hE.svg)](https://asciinema.org/a/HDY4JndlqfcqiJ5AvnZZBe6hE)
+
 ### 3. Greatest common divisor
 
 ```sh
