@@ -1,6 +1,17 @@
-import { randomInt, gcd } from '../index.js';
+import randomInt from '../utilities.js';
+import generalLogicGame from '../index.js';
 
-export default () => {
+const gameTask = 'Find the greatest common divisor of given numbers.';
+
+const gcd = (a, b) => {
+  if (b) {
+    return gcd(b, a % b);
+  }
+
+  return Math.abs(a);
+};
+
+const gcdGame = () => {
   const firstNumber = randomInt();
   const secondNumber = randomInt();
 
@@ -8,3 +19,5 @@ export default () => {
 
   return [`${firstNumber} ${secondNumber}`, String(expectedAnswer)];
 };
+
+export default () => generalLogicGame(gameTask, gcdGame);

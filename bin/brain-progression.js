@@ -1,8 +1,4 @@
 #!/usr/bin/env node
-import greeting from '../src/cli.js';
-import progression from '../src/games/progression.js';
-import { generalLogicGame } from '../src/index.js';
+import startGame from '../src/games/progression.js';
 
-const userName = greeting();
-console.log('What number is missing in the progression?');
-generalLogicGame(userName, progression);
+startGame();

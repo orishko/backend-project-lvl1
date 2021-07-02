@@ -1,6 +1,9 @@
-import { randomInt } from '../index.js';
+import randomInt from '../utilities.js';
+import generalLogicGame from '../index.js';
 
-export default (i) => {
+const gameTask = 'What is the result of the expression?';
+
+const calc = (i) => {
   let expression = '';
   let expectedAnswer = 0;
   const randomInt1 = randomInt();
@@ -24,3 +27,5 @@ export default (i) => {
   }
   return [expression, String(expectedAnswer)];
 };
+
+export default () => generalLogicGame(gameTask, calc);
