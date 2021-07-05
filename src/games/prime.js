@@ -1,5 +1,5 @@
 import randomInt from '../utilities.js';
-import generalLogicGame from '../index.js';
+import runGame from '../index.js';
 
 const gameTask = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
@@ -22,4 +22,4 @@ const primeGame = () => {
   return [randomNumber, expectedAnswer];
 };
 
-export default () => generalLogicGame(gameTask, primeGame);
+export default () => runGame(gameTask, primeGame);

@@ -1,5 +1,5 @@
 import randomInt from '../utilities.js';
-import generalLogicGame from '../index.js';
+import runGame from '../index.js';
 
 const gameTask = 'Answer "yes" if the number is even, otherwise answer "no".';
 
@@ -11,4 +11,4 @@ const even = () => {
   return [randomNumber, expectedAnswer];
 };
 
-export default () => generalLogicGame(gameTask, even);
+export default () => runGame(gameTask, even);

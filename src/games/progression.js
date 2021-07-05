@@ -1,5 +1,5 @@
 import randomInt from '../utilities.js';
-import generalLogicGame from '../index.js';
+import runGame from '../index.js';
 
 const gameTask = 'What number is missing in the progression?';
 
@@ -27,4 +27,4 @@ const progressionGame = () => {
   return [progression, String(expectedAnswer)];
 };
 
-export default () => generalLogicGame(gameTask, progressionGame);
+export default () => runGame(gameTask, progressionGame);

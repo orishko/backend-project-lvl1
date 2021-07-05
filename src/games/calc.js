@@ -1,5 +1,5 @@
 import randomInt from '../utilities.js';
-import generalLogicGame from '../index.js';
+import runGame from '../index.js';
 
 const gameTask = 'What is the result of the expression?';
 
@@ -28,4 +28,4 @@ const calc = (i) => {
   return [expression, String(expectedAnswer)];
 };
 
-export default () => generalLogicGame(gameTask, calc);
+export default () => runGame(gameTask, calc);

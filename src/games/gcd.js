@@ -1,5 +1,5 @@
 import randomInt from '../utilities.js';
-import generalLogicGame from '../index.js';
+import runGame from '../index.js';
 
 const gameTask = 'Find the greatest common divisor of given numbers.';
 
@@ -20,4 +20,4 @@ const gcdGame = () => {
   return [`${firstNumber} ${secondNumber}`, String(expectedAnswer)];
 };
 
-export default () => generalLogicGame(gameTask, gcdGame);
+export default () => runGame(gameTask, gcdGame);
