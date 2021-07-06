@@ -12,19 +12,14 @@ const runGame = (gameTask, genGameRound) => {
     const [question, expectedAnswer] = genGameRound(i);
     console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');
-    if (userAnswer === expectedAnswer) {
-      console.log('Correct!');
-    } else {
-      console.log(
-        // eslint-disable-next-line comma-dangle
-        `'${userAnswer}' is wrong answer ;(. Correct answer was '${expectedAnswer}'.`
-      );
+    if (userAnswer !== expectedAnswer) {
+      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${expectedAnswer}'.`);
       console.log(`Let's try again, ${userName}!`);
-      return false;
+      return;
     }
+    console.log('Correct!');
   }
   console.log(`Congratulations, ${userName}!`);
-  return true;
 };
 
 export default runGame;
