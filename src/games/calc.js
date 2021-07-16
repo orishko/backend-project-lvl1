@@ -1,31 +1,40 @@
-import randomInt from '../utilities.js';
-import runGame from '../index.js';
+import generateRandomInt from '../utilities.js';
+import game from '../index.js';
 
 const gameTask = 'What is the result of the expression?';
 
-const calc = (i) => {
+const generateNewRound = () => {
+  const operations = ['+', '-', '*'];
+  const operation = operations[generateRandomInt(2, 0)];
+  const randomNumber1 = generateRandomInt();
+  const randomNumber2 = generateRandomInt();
+
+  return [operation, randomNumber1, randomNumber2];
+};
+
+const getCalculateData = () => {
   let expression = '';
   let expectedAnswer = 0;
-  const randomInt1 = randomInt();
-  const randomInt2 = randomInt();
 
-  switch (i) {
-    case 1:
-      expression = `${randomInt1} + ${randomInt2}`;
-      expectedAnswer = randomInt1 + randomInt2;
+  const [operation, randomNumber1, randomNumber2] = generateNewRound();
+
+  switch (operation) {
+    case '+':
+      expression = `${randomNumber1} + ${randomNumber2}`;
+      expectedAnswer = randomNumber1 + randomNumber2;
       break;
-    case 2:
-      expression = `${randomInt1} - ${randomInt2}`;
-      expectedAnswer = randomInt1 - randomInt2;
+    case '-':
+      expression = `${randomNumber1} - ${randomNumber2}`;
+      expectedAnswer = randomNumber1 - randomNumber2;
       break;
-    case 3:
-      expression = `${randomInt1} * ${randomInt2}`;
-      expectedAnswer = randomInt1 * randomInt2;
+    case '*':
+      expression = `${randomNumber1} * ${randomNumber2}`;
+      expectedAnswer = randomNumber1 * randomNumber2;
       break;
     default:
-      break;
+      return null;
   }
   return [expression, String(expectedAnswer)];
 };
 
-export default () => runGame(gameTask, calc);
+export default () => game(gameTask, getCalculateData);
