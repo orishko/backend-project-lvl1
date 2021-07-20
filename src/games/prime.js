@@ -1,5 +1,5 @@
 import generateRandomInt from '../utilities.js';
-import game from '../index.js';
+import gameConstruct from '../index.js';
 
 const gameTask = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
@@ -22,4 +22,4 @@ const getPrimeData = () => {
   return [randomNumber, expectedAnswer];
 };
 
-export default () => game(gameTask, getPrimeData);
+export default () => gameConstruct(gameTask, getPrimeData);

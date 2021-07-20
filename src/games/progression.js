@@ -1,5 +1,5 @@
 import generateRandomInt from '../utilities.js';
-import game from '../index.js';
+import gameConstruct from '../index.js';
 
 const gameTask = 'What number is missing in the progression?';
 
@@ -37,4 +37,4 @@ const getProgressionData = () => {
   return [result, String(expectedAnswer)];
 };
 
-export default () => game(gameTask, getProgressionData);
+export default () => gameConstruct(gameTask, getProgressionData);

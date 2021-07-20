@@ -1,5 +1,5 @@
 import generateRandomInt from '../utilities.js';
-import game from '../index.js';
+import gameConstruct from '../index.js';
 
 const gameTask = 'What is the result of the expression?';
 
@@ -30,9 +30,9 @@ const getCalculateData = () => {
 
   const expression = `${firstNumber} ${operation} ${secondNumber}`;
 
-  const expectedAnswer = calculate('operation', firstNumber, secondNumber);
+  const expectedAnswer = calculate(operation, firstNumber, secondNumber);
 
   return [expression, String(expectedAnswer)];
 };
 
-export default () => game(gameTask, getCalculateData);
+export default () => gameConstruct(gameTask, getCalculateData);
