@@ -12,28 +12,26 @@ const generateNewRound = () => {
   return [operation, randomNumber1, randomNumber2];
 };
 
-const getCalculateData = () => {
-  let expression = '';
-  let expectedAnswer = 0;
-
-  const [operation, randomNumber1, randomNumber2] = generateNewRound();
-
+const calculate = (operation, firstNumber, secondNumber) => {
   switch (operation) {
     case '+':
-      expression = `${randomNumber1} + ${randomNumber2}`;
-      expectedAnswer = randomNumber1 + randomNumber2;
-      break;
+      return firstNumber + secondNumber;
     case '-':
-      expression = `${randomNumber1} - ${randomNumber2}`;
-      expectedAnswer = randomNumber1 - randomNumber2;
-      break;
+      return firstNumber - secondNumber;
     case '*':
-      expression = `${randomNumber1} * ${randomNumber2}`;
-      expectedAnswer = randomNumber1 * randomNumber2;
-      break;
+      return firstNumber * secondNumber;
     default:
       return null;
   }
+};
+
+const getCalculateData = () => {
+  const [operation, firstNumber, secondNumber] = generateNewRound();
+
+  const expression = `${firstNumber} ${operation} ${secondNumber}`;
+
+  const expectedAnswer = calculate(operation, firstNumber, secondNumber);
+
   return [expression, String(expectedAnswer)];
 };
 
