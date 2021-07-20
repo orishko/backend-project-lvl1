@@ -21,7 +21,7 @@ const calculate = (operation, firstNumber, secondNumber) => {
     case '*':
       return firstNumber * secondNumber;
     default:
-      return null;
+      throw new Error(`Unknown operation: '${operation}'`);
   }
 };
 
@@ -30,7 +30,7 @@ const getCalculateData = () => {
 
   const expression = `${firstNumber} ${operation} ${secondNumber}`;
 
-  const expectedAnswer = calculate(operation, firstNumber, secondNumber);
+  const expectedAnswer = calculate('operation', firstNumber, secondNumber);
 
   return [expression, String(expectedAnswer)];
 };
