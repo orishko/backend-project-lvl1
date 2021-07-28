@@ -1,16 +1,7 @@
 import generateRandomInt from '../utilities.js';
-import gameConstruct from '../index.js';
+import run from '../index.js';
 
 const gameTask = 'What is the result of the expression?';
-
-const generateNewRound = () => {
-  const operations = ['+', '-', '*'];
-  const operation = operations[generateRandomInt(2, 0)];
-  const randomNumber1 = generateRandomInt();
-  const randomNumber2 = generateRandomInt();
-
-  return [operation, randomNumber1, randomNumber2];
-};
 
 const calculate = (operation, firstNumber, secondNumber) => {
   switch (operation) {
@@ -25,14 +16,17 @@ const calculate = (operation, firstNumber, secondNumber) => {
   }
 };
 
-const getCalculateData = () => {
-  const [operation, firstNumber, secondNumber] = generateNewRound();
+const generateNewRound = () => {
+  const operations = ['+', '-', '*'];
+  const operation = operations[generateRandomInt(2, 0)];
+  const firstNumber = generateRandomInt();
+  const secondNumber = generateRandomInt();
 
   const expression = `${firstNumber} ${operation} ${secondNumber}`;
 
-  const expectedAnswer = calculate(operation, firstNumber, secondNumber);
+  const expectedAnswer = calculate(operation, firstNumber, secondNumber).toString();
 
-  return [expression, String(expectedAnswer)];
+  return [expression, expectedAnswer];
 };
 
-export default () => gameConstruct(gameTask, getCalculateData);
+export default () => run(gameTask, generateNewRound);
