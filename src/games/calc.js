@@ -18,7 +18,7 @@ const calculate = (operation, firstNumber, secondNumber) => {
 
 const generateNewRound = () => {
   const operations = ['+', '-', '*'];
-  const numberOfOperations = operations.length() - 1;
+  const numberOfOperations = operations.length - 1;
   const operation = operations[generateRandomInt(numberOfOperations, 0)];
   const firstNumber = generateRandomInt();
   const secondNumber = generateRandomInt();
